@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Django REST framework 
     'rest_framework',
+    'rest_framework.authtoken',
 
     # MyApp application 
     'my_app.apps.MyAppConfig',
@@ -132,3 +133,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
 TEST_OUTPUT_DIR = 'test_output'
 TEST_OUTPUT_FILE_NAME = 'test_result.xml'
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#          'rest_framework.authentication.TokenAuthentication',
+#     ]
+# }

@@ -11,3 +11,6 @@ class PlayerSkill(models.Model):
     player = models.ForeignKey(Player, related_name='playerSkills', on_delete=models.CASCADE)
     skill = models.CharField(max_length=16, blank=False)
     value = models.IntegerField()
+    
+    def __str__(self): 
+        return self.player.name + " " + self.skill
